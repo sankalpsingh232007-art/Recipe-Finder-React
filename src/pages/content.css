@@ -1,0 +1,197 @@
+.btn {
+  width: 235px;
+  height: 255px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px 3px rgb(146, 146, 146);
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: darkgreen;
+  z-index: 2;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.btn img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 75px;
+}
+
+.index {
+  height: 100vh;
+  background-image: url("../assets/BG-index.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-top: 190px;
+}
+
+.description-text {
+  max-width: 250px;
+  color: black;
+}
+
+.description h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: darkgreen;
+}
+
+.description p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+.Explore {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+
+  background-color: darkgreen;
+  color: white;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+
+  border-radius: 50px;
+  border: none;
+
+  transition: all 0.3s ease;
+}
+
+.Explore a {
+  color: white;
+  text-decoration: none;
+}
+
+#suggestions {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.suggestion-item:hover {
+  background: #f0f5d9;
+}
+
+@media (max-width:480px) {
+  nav {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .SearchBox {
+    transform: none;
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    background: white;
+    padding: 8px;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .SearchBox input {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .links {
+    order: 3;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .index {
+    background-image: url("BG-index-phone.jpeg");
+    height: 100vh;
+    padding-top: 150px;
+    background-size: cover;
+  }
+
+  .description {
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+
+  .description h1 {
+    font-size: 32px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .Explore {
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 12px;
+  }
+}

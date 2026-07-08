@@ -1,0 +1,66 @@
+.login {
+  background-image: url('../assets/BG-Login.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; 
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+}
+
+.login-card h1 {
+  color: darkgreen;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+
+  background: darkgreen;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 75px;
+}

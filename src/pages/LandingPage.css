@@ -1,0 +1,504 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 110vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 120px 0 220px;
+}
+
+/* Dark Overlay */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .58);
+}
+
+/* =========================
+   FLOATING IMAGES
+========================= */
+
+.floating {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tomato {
+    width: 85px;
+    top: 180px;
+    left: 16%;
+}
+
+.basil {
+    width: 95px;
+    top: 320px;
+    left: 12%;
+}
+
+.bowl {
+    width: 520px;
+    right: -60px;
+    bottom: 70px;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.heroContent {
+
+    position: relative;
+    z-index: 5;
+
+    width: 90%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+/* ========================= */
+
+.miniTitle {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #8CC63E;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.miniTitle svg {
+
+    font-size: 26px;
+}
+
+.miniTitle span {
+
+    font-family: 'Pacifico', cursive;
+}
+
+/* ========================= */
+
+.heroContent h1 {
+
+    font-size: 5rem;
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.heroContent h1 span {
+
+    color: #8CC63E;
+
+    font-family: 'Pacifico', cursive;
+
+    font-weight: 400;
+}
+
+/* ========================= */
+
+.heroContent p {
+
+    max-width: 700px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+
+    color: #efefef;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.searchBar {
+
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    border-radius: 60px;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
+
+    margin-bottom: 35px;
+}
+
+.searchIcon {
+
+    color: #777;
+
+    font-size: 22px;
+
+    margin: 0 15px;
+}
+
+.searchBar input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 18px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.searchBar button {
+
+    width: 65px;
+    height: 65px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #8CC63E;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.getStarted{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 55px;
+
+    border: none;
+
+    border-radius: 60px;
+
+    background: #8CC63E;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-bottom: 50px;
+}
+
+.getStartedLink {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.getStarted svg {
+
+    font-size: 20px;
+}
+
+/* =========================
+   SCROLL
+========================= */
+
+.scrollDown {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    color: white;
+
+    position: relative;
+
+    z-index: 20;
+}
+
+.scrollDown p {
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+.scrollDown span {
+
+    font-size: 34px;
+}
+
+/* =========================
+   WAVE
+========================= */
+
+.waveDivider {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 180px;
+
+    margin-top: -180px;
+
+    z-index: 5;
+}
+
+.waveDivider svg {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+}
+
+.waveDivider path {
+
+    fill: #fdf9f3;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+
+    background: #fdf9f3;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+
+    padding: 90px 8% 100px;
+
+    text-align: center;
+}
+
+/* ========================= */
+
+.featureCard {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 40px 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+/* ========================= */
+
+.featureIcon {
+
+    font-size: 60px;
+
+    color: #8CC63E;
+
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+
+.featureCard h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.featureCard p {
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px) {
+
+    .heroContent h1 {
+
+        font-size: 3.8rem;
+
+    }
+
+    .features {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .bowl {
+
+        width: 350px;
+
+        right: -80px;
+
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px) {
+
+    .hero {
+
+        padding: 120px 20px;
+
+    }
+
+    .heroContent h1 {
+
+        font-size: 2.8rem;
+
+    }
+
+    .heroContent p {
+
+        font-size: 1rem;
+
+    }
+
+    .searchBar {
+
+        flex-direction: row;
+
+        padding: 8px;
+
+    }
+
+    .searchBar button {
+
+        width: 55px;
+
+        height: 55px;
+
+    }
+
+    .getStarted {
+
+        padding: 15px 40px;
+
+        font-size: 18px;
+
+    }
+
+    .tomato {
+
+        width: 60px;
+
+        left: 5%;
+
+        top: 160px;
+
+    }
+
+    .basil {
+
+        width: 70px;
+
+        left: 2%;
+
+        top: 320px;
+
+    }
+
+    .bowl {
+
+        display: none;
+
+    }
+
+    .waveDivider {
+
+        height: 110px;
+
+        margin-top: -110px;
+    }
+
+    .features {
+
+        grid-template-columns: 1fr;
+
+        padding: 70px 25px;
+    }
+
+}
