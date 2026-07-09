@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NavBar.css';
-import logo from '../assets/Logo.jpg';
+import logo from '../assets/Logo.png';
 import user from '../assets/user.png';
 import { FaSearch } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom';
@@ -20,7 +20,7 @@ export default function NavBar() {
     };
 
     return (
-        <nav>
+        <nav className="navbar">
 
             <div className="logo">
                 <Link to="/">

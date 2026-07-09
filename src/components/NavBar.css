@@ -7,7 +7,7 @@
 
 nav {
   position: fixed;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.08);
   gap: 40px;
   width: 100%;
   padding: 15px;
@@ -17,6 +17,12 @@ nav {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   justify-content: space-between;
   z-index: 1000;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .links {
@@ -37,9 +43,28 @@ nav {
 }
 
 .SearchBox input {
-  padding: 6px 12px;
+  width: 700px;
+  height: 35px;
+
+  padding: 6px 15px;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  background: rgba(255, 255, 255, 0.12);
+
   border-radius: 20px;
-  border: 1px solid #ccc;
+  color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.SearchBox input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .logo {
@@ -48,12 +73,14 @@ nav {
   color: darkgreen;
 }
 
+.logo img {
+  width: 25px;
+  height: 25px;
+}
+
 input {
   width: 700px;
   min-height: 25px;
-  border-radius: 12.5px;
-  border-color: black;
-  background-color: white;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -64,11 +91,6 @@ nav a {
   text-decoration: none;
   font-size: 20px;
 
-}
-
-nav img {
-  width: 25px;
-  height: 25px;
 }
 
 nav a:hover {

@@ -17,17 +17,17 @@
 .login-card {
   width: 400px;
   padding: 40px;
-
-  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-
+  backdrop-filter: blur(18px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
   text-align: center;
 }
 
 .login-card h1 {
-  color: darkgreen;
+  color: #8CC63E;
   margin-bottom: 25px;
 }
 
@@ -38,23 +38,33 @@
 }
 
 .login-card input {
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+.login-card input:hover {
+  outline: none;
+  transform: scale(1.1);
 }
 
 .login-card button {
   width: 100%;
   padding: 12px;
 
-  background: darkgreen;
+  background: #8CC63E;
   color: white;
 
   border: none;
   border-radius: 10px;
 
   cursor: pointer;
+}
+
+.login-card button:hover {
+  transform: scale(1.1);
 }
 
 a {
