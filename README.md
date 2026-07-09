@@ -1,46 +1,45 @@
-# 🍽️ Recipe Finder
+# Recipe Finder
 
-Recipe Finder is a modern React-based web application that helps users discover delicious recipes from around the world using the Spoonacular API. Users can search for recipes, browse by category, and view detailed cooking instructions, ingredients, and nutritional information.
+Recipe Finder is a React web application that helps users discover recipes from around the world using the Spoonacular API. Users can search recipes by name, browse by category, and view detailed cooking instructions, ingredients, and nutritional information.
 
 ---
 
-## 📖 Features
+## Features
 
-- 🔍 Search recipes by name
-- 🍕 Browse recipes from different categories
-- 📋 Detailed recipe page
+- Search recipes by name
+- Browse recipes by category
+- Detailed recipe pages, including:
   - Recipe image
   - Cooking time
-  - Cuisine
-  - Vegetarian / Non-Vegetarian
-  - Ingredients
+  - Cuisine type
+  - Vegetarian / non-vegetarian tag
+  - Ingredients list
   - Step-by-step instructions
   - Nutritional information
-- 🎲 Random recipes for each category
-- 📱 Responsive design
-- ⚡ Fast and modern UI built with React
+- Random recipe suggestions for each category
+- Responsive design
+- Fast, modern UI built with React and Vite
 
 ---
 
-## 🛠️ Built With
+## Built With
 
-- React.js
-- React Router DOM
+- [React](https://react.dev/)
+- [React Router DOM](https://reactrouter.com/)
 - JavaScript (ES6+)
-- CSS3
-- HTML5
-- Spoonacular API
-- React Icons
-- Vite
+- CSS3 / HTML5
+- [Vite](https://vitejs.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Spoonacular API](https://spoonacular.com/food-api)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
 │
-├── assets/
+├── assets/                  # Images, icons, static assets
 │
 ├── components/
 │   ├── Header.jsx
@@ -57,7 +56,7 @@ src/
 │   └── Login.jsx
 │
 ├── services/
-│   └── Spoonacular.js
+│   └── Spoonacular.js       # API request logic
 │
 ├── App.jsx
 ├── main.jsx
@@ -66,159 +65,119 @@ src/
 
 ---
 
-## 🚀 Installation
+## Getting Started
 
-Clone the repository
+### Prerequisites
 
-```bash
-git clone https://github.com/yourusername/recipe-finder.git
-```
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- npm (comes with Node.js)
 
-Go into the project directory
+### Installation
 
-```bash
-cd recipe-finder
-```
+1. Clone the repository
+   ```bash
+   git clone https://github.com/Neev1809/Recipe-Finder-React.git
+   ```
 
-Install dependencies
+2. Move into the project directory
+   ```bash
+   cd Recipe-Finder-React
+   ```
 
-```bash
-npm install
-```
+3. Install dependencies
+   ```bash
+   npm install
+   ```
 
-Start the development server
+4. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-```
-
-Open your browser
-
-```
-http://localhost:5173
-```
-
----
-
-## 🔑 API Setup
-
-This project uses the Spoonacular API.
-
-1. Create an account at:
-
-https://spoonacular.com/food-api
-
-2. Generate an API Key.
-
-3. Add your API key inside:
-
-```javascript
-src/services/Spoonacular.js
-```
-
-Example:
-
-```javascript
-const API_KEY = "YOUR_API_KEY";
-```
+5. Open your browser at
+   ```
+   http://localhost:5173
+   ```
 
 ---
 
-## 📸 Screens
+## API Setup
 
-### Home Page
+This project relies on the [Spoonacular API](https://spoonacular.com/food-api) for all recipe data.
 
-- Search recipes
-- Browse categories
+1. Create a free account at [spoonacular.com/food-api](https://spoonacular.com/food-api).
+2. Generate an API key from your dashboard.
+3. Add the key to `src/services/Spoonacular.js`:
+   ```js
+   const API_KEY = "YOUR_API_KEY";
+   ```
 
-### Search Results
-
-- Recipe cards
-- Recipe image
-- Recipe title
-
-### Recipe Details
-
-- Hero section
-- About recipe
-- Ingredients
-- Nutrition
-- Cooking instructions
+Note: Avoid committing your real API key to a public repository. Consider using an environment variable (e.g. `.env` with `VITE_SPOONACULAR_API_KEY`) instead.
 
 ---
 
-## 🔍 API Endpoints Used
+## API Endpoints Used
 
-### Search Recipes
-
-```
-GET /recipes/complexSearch
-```
-
-### Recipe Details
-
-```
-GET /recipes/{id}/information
-```
-
-### Random Recipes
-
-```
-GET /recipes/random
-```
+| Purpose | Endpoint |
+|---|---|
+| Search recipes | `GET /recipes/complexSearch` |
+| Recipe details | `GET /recipes/{id}/information` |
+| Random recipes | `GET /recipes/random` |
 
 ---
 
-## 📌 Future Improvements
+## Application Overview
 
-- ❤️ Favorite Recipes
-- 👤 User Authentication
-- 🌙 Dark Mode
-- 🍽️ Meal Planner
-- 🛒 Shopping List
-- 📱 Improved Mobile Responsiveness
-- 🔖 Save Recipes
-- ⭐ Recipe Ratings
-- 🎥 Cooking Videos
+**Home Page** — Search bar and category browsing
+
+**Search Results** — Recipe cards with image and title
+
+**Recipe Details** — Hero section, ingredients, nutrition facts, and step-by-step cooking instructions
 
 ---
 
-## 🤝 Contributing
+## Roadmap
+
+- Favorite recipes
+- User authentication
+- Dark mode
+- Meal planner
+- Shopping list generator
+- Save recipes for later
+- Recipe ratings and reviews
+- Cooking videos
+
+---
+
+## Contributing
 
 Contributions are welcome.
 
 1. Fork the repository
-
 2. Create a feature branch
-
-```bash
-git checkout -b feature-name
-```
-
+   ```bash
+   git checkout -b feature-name
+   ```
 3. Commit your changes
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push the branch
-
-```bash
-git push origin feature-name
-```
-
-5. Create a Pull Request.
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a Pull Request
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
-**Neev**
+Neev ([@Neev1809](https://github.com/Neev1809))
 
-Recipe Finder was developed as a React project to provide an easy and interactive way for users to discover recipes using the Spoonacular API.
+Recipe Finder was built as a React project to make discovering recipes quick, visual, and interactive using the Spoonacular API.
