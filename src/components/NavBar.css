@@ -7,7 +7,7 @@
 
 nav {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: white;
   gap: 40px;
   width: 100%;
   padding: 15px;
@@ -31,6 +31,11 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 30px;
+}
+
+.links img {
+  width: 32px;
+  height: 25px;
 }
 
 .SearchBox {
@@ -61,26 +66,18 @@ nav {
   -moz-appearance: none;
 }
 
-.SearchBox input:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-
 .logo {
   font-weight: bold;
   font-size: 20px;
   color: darkgreen;
 }
 
-.logo img {
-  width: 25px;
-  height: 25px;
-}
-
 input {
   width: 700px;
   min-height: 25px;
+  border-radius: 12.5px;
+  border-color: black;
+  background-color: white;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -93,7 +90,11 @@ nav a {
 
 }
 
+nav img {
+  width: 25px;
+  height: 25px;
+}
+
 nav a:hover {
   text-decoration: underline;
-  transform: translateY(-2px);
 }
