@@ -1,24 +1,73 @@
-import './Login.css';
+import "./Login.css";
+import { supabase } from "../services/supabase";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+
+    const navigate = useNavigate();
+
     return (
-        <main class="login-page login">
-            <section class="login-card">
-                <h1> sign up </h1>
-                <form id="loginForm" action="index.html" method="post">
-                    <input type="text" name="username" placeholder="Username" required />
+        <main className="login-page login">
 
-                    <input type="email" name="email" placeholder="Email Address" required />
+            <section className="login-card">
 
-                    <input type="password" name="password" placeholder="Password" required />
+                <h1>Sign Up</h1>
 
-                    <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+                <form id="loginForm">
 
-                    <button type="submit" class="login-button">
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        required
+                    />
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+
+                    <input
+                        type="password"
+                        name="confirmPassword"
+                        placeholder="Confirm Password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        required
+                    />
+
+                    <button
+                        type="submit"
+                        className="login-button"
+                    >
                         Sign Up
                     </button>
+
                 </form>
+
             </section>
+
         </main>
     );
 }
